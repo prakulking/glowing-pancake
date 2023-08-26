@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    int num,orginalnum,remainder,n=0;
+    float result=0.0;
+    printf("enter the value");
+    scanf("%d",&num);
+    
+    orginalnum=num;
+    for(orginalnum=num;orginalnum!=0;++n){
+        orginalnum/=10;
+    }
+    for(orginalnum=num;orginalnum!=0;orginalnum/=10){
+        remainder=orginalnum%10;
+        result+=pow(remainder,n);
+    }
+    if ((int)result==num)
+    {
+        printf("%d is a amstrong number",num);
+    }
+    else{
+    printf("%d is no a amstrong num",num);
+    }
+return 0;
+}
