@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+	int num,i;
+	unsigned long long fact=1;
+	printf("enter a value:");
+	scanf("%d",&num);
+	if(num<0)
+	{
+		printf("there are no negative numbers in factorial");
+	}
+	else {
+		for(i=1;i<=num;i++){
+		
+		fact*=i;}
+	}
+	printf("factorial of %d =%llu",fact,num);
+	return 0;
+
+}
